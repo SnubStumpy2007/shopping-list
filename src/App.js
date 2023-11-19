@@ -1,21 +1,18 @@
 // import React library as a dependency
 import React from 'react';
 import './App.css';
+import { Main } from "react"
 
 
 function App() {
+  
+
+
   return (
-   // Import list container styling from App.css
-   <div id="list-container">
-
-   </div>
-  );
-
-    function ListItem(props){
-      <li>{props.name}</li>
-    }
-
-
+    <div className='App'>
+      <Main />
+    </div>
+  )
 }
 
 export default App;
