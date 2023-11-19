@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+// import React library as a dependency
+import React from 'react';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   // Import list container styling from App.css
+   <div id="list-container">
+
+   </div>
   );
+
+    function ListItem(props){
+      <li>{props.name}</li>
+    }
+
+
 }
 
 export default App;
