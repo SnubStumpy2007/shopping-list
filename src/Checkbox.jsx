@@ -1,12 +1,12 @@
 import React, { useState} from "react";
 
-export const Checkbox = ({grocery}) => {
+const Checkbox = ({grocery}) => {
     const [isChecked, setIsChecked] = useState(false)
     const [isVisible, setIsVisible] = useState(true)
     const [isCrossed, setIsCrossed] = useState(false)
     
-    function handleChange() {
-        setIsChecked(true)
+    function handleChange(event) {
+        setIsChecked(event.target.checked)
     }
 
     return(
@@ -20,3 +20,5 @@ export const Checkbox = ({grocery}) => {
         </div>
     )
 }
+
+export default Checkbox;

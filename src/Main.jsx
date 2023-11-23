@@ -1,7 +1,7 @@
 import React from "react"
-import {Checkbox} from "react"
+import Checkbox from "./Checkbox"; // Update the import statement
 
-export const Main = () => {
+ const Main = () => {
     const groceries = [
         "Baking powder",
         "Baking Soda",
@@ -19,3 +19,5 @@ export const Main = () => {
         </div>
       )
 }
+
+export default Main;

@@ -1,7 +1,8 @@
 // import React library as a dependency
 import React from 'react';
 import './App.css';
-import { Main } from "react"
+import Main from './Main'; // Import the default export
+
 
 
 function App() {
