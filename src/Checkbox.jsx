@@ -2,7 +2,10 @@ import React from "react";
 
 export const Checkbox = ({grocery}) => {
     return(
-        <div>
+        <div className="item">
+            <div className="input-container">
+                
+            </div>
             <p>
             {grocery}
             </p>
