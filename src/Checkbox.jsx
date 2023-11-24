@@ -9,10 +9,22 @@ const Checkbox = ({grocery}) => {
         setIsChecked(event.target.checked)
     }
 
+    const handleKeyDown = (event) => {
+        if(event.key === "Enter" && event.target.checked){
+            setIsCrossed((isCrossed) => !isCrossed)
+        }
+
+        if(event.key === "Escape" && event.target.checked){
+            setIsVisible(false)
+        }
+    }
+
+
+    if(isVisible)
     return(
-        <div className="item">
+        <div className={`item ${isCrossed ? "input-checked" : ""}`}>
             <div className="input-container">
-                <input type="checkbox"  checked={isChecked} onChange={handleChange}/>
+                <input type="checkbox"  checked={isChecked} onKey={handleKeyDown} onChange={handleChange}/>
             </div>
             <p>
             {grocery}
